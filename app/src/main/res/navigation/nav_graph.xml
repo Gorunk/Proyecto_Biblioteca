@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/libroFragment">
+
+    <fragment
+        android:id="@+id/libroFragment"
+        android:name="com.julian.proyectobiblioteca.ui.libro.LibroFragment"
+        android:label="fragment_libro"
+        tools:layout="@layout/fragment_libro" >
+        <action
+            android:id="@+id/action_libroFragment_to_libroDetailFragment"
+            app:destination="@id/libroDetailFragment" />
+        <action
+            android:id="@+id/action_libroFragment_to_createLibroFragment"
+            app:destination="@id/createLibroFragment" />
+        <action
+            android:id="@+id/action_libroFragment_to_autorFragment"
+            app:destination="@id/autorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libroDetailFragment"
+        android:name="com.julian.proyectobiblioteca.ui.libroDetail.LibroDetailFragment"
+        android:label="fragment_libro_detail"
+        tools:layout="@layout/fragment_libro_detail" >
+        <action
+            android:id="@+id/action_libroDetailFragment_to_libroFragment"
+            app:destination="@id/libroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createLibroFragment"
+        android:name="com.julian.proyectobiblioteca.ui.create.CreateLibroFragment"
+        android:label="fragment_create_libro"
+        tools:layout="@layout/fragment_create_libro" >
+        <action
+            android:id="@+id/action_createLibroFragment_to_libroFragment"
+            app:destination="@id/libroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/autorFragment"
+        android:name="com.julian.proyectobiblioteca.ui.autor.AutorFragment"
+        android:label="fragment_autor"
+        tools:layout="@layout/fragment_autor" >
+        <action
+            android:id="@+id/action_autorFragment_to_autorDetailFragment"
+            app:destination="@id/autorDetailFragment" />
+        <action
+            android:id="@+id/action_autorFragment_to_createAutorFragment"
+            app:destination="@id/createAutorFragment" />
+        <action
+            android:id="@+id/action_autorFragment_to_libroFragment"
+            app:destination="@id/libroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/autorDetailFragment"
+        android:name="com.julian.proyectobiblioteca.ui.autorDetail.AutorDetailFragment"
+        android:label="fragment_autor_detail"
+        tools:layout="@layout/fragment_autor_detail" >
+        <action
+            android:id="@+id/action_libroDetailFragment_to_libroFragment"
+            app:destination="@id/libroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAutorFragment"
+        android:name="com.julian.proyectobiblioteca.ui.create.CreateAutorFragment"
+        android:label="fragment_create_autor"
+        tools:layout="@layout/fragment_create_autor" >
+        <action
+            android:id="@+id/action_createAutorFragment_to_autorFragment"
+            app:destination="@id/autorFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208418958232",
+    "project_id": "fir-clase-77674",
+    "storage_bucket": "fir-clase-77674.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208418958232:android:9b6eb44ccf601e926059ed",
+        "android_client_info": {
+          "package_name": "com.julian.proyectobiblioteca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208418958232-017r1m479ospqkti9n452oc6il6sgqtq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5PDP-W3Y5-oWBkdYKEOMggl6tMmIei90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208418958232-017r1m479ospqkti9n452oc6il6sgqtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
